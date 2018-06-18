@@ -1,8 +1,8 @@
 {
-  "name": "openwhisk-nodejs",
+  "name": "goalbot",
   "version": "1.0.0",
-  "description": "Sample OpenWhisk NodeJS serverless framework service.",
-  "main": "handler.js",
+  "description": "Serverless Twitter bot which tweets out goals from the 2018 FIFA World Cup.",
+  "main": "lib/goal_tracker.js",
   "keywords": [
     "serverless",
     "openwhisk"
@@ -10,9 +10,9 @@
   "devDependencies": {
     "serverless-openwhisk": ">=0.13.0"
   },
+  "license": "MIT",
   "dependencies": {
     "country-emoji": "^1.2.0",
-    "node-emoji": "^1.8.1",
     "node-fetch": "^2.1.2",
     "openwhisk": "^3.15.0",
     "redis": "^2.8.0",
