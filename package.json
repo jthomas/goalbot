@@ -1,0 +1,21 @@
+{
+  "name": "openwhisk-nodejs",
+  "version": "1.0.0",
+  "description": "Sample OpenWhisk NodeJS serverless framework service.",
+  "main": "handler.js",
+  "keywords": [
+    "serverless",
+    "openwhisk"
+  ],
+  "devDependencies": {
+    "serverless-openwhisk": ">=0.13.0"
+  },
+  "dependencies": {
+    "country-emoji": "^1.2.0",
+    "node-emoji": "^1.8.1",
+    "node-fetch": "^2.1.2",
+    "openwhisk": "^3.15.0",
+    "redis": "^2.8.0",
+    "twitter": "^1.7.1"
+  }
+}

@@ -1,0 +1,27 @@
+service: goalbot
+
+provider:
+  name: openwhisk
+  runtime: nodejs:8
+
+custom: 
+  credentials: ${file(creds.json)}
+
+functions:
+  goal_tracker:
+    handler: lib/goal_tracker.handler
+    parameters:
+      redis: ${self:custom.credentials.redis}
+    events:
+       - schedule: cron(* * * * *)
+  twitter:
+    handler: lib/twitter.handler
+    parameters:
+      twitter: ${self:custom.credentials.twitter}
+    events:
+       - trigger: goal
+
+# extend the framework using plugins listed here:
+# https://github.com/serverless/plugins
+plugins:
+  - serverless-openwhisk
