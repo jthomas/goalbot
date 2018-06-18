@@ -42,7 +42,7 @@ If you want to deploy this project you will need an instance of the Apache OpenW
   cd goalbot && npm install
   ```
 
-- Fill in authentication credential for [Redis](https://compose.com/databases/redis) and [Twitter](https://apps.twitter.com/).
+- Create authentication credential for [Redis](https://compose.com/databases/redis) and [Twitter ](https://apps.twitter.com/) in `creds.json` file.
 
   ```json
   {
