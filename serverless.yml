@@ -8,7 +8,7 @@ custom:
   credentials: ${file(creds.json)}
 
 functions:
-  goal_tracker:
+  goals:
     handler: lib/goal_tracker.handler
     parameters:
       redis: ${self:custom.credentials.redis}
